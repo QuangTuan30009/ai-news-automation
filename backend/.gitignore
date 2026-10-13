@@ -1,0 +1,28 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Credentials & keys
+fastapi_ai.pem
+*.pem
+*.key
+
+# Data cache
+.cache/
+data/output_*.json
+data/techcrunch_*.json
+!data/techcrunch_startup_1.json
+
+# Selenium profile
+SeleniumProfile/

@@ -1,0 +1,25 @@
+# Environment variables
+.env
+.env.local
+*.env
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# Logs & temp
+*.log
+SeleniumProfile/
+*.pem
+*.key
+.DS_Store
+Thumbs.db

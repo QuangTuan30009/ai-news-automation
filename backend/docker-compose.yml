@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-translation-backend:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      HF_HOME: /app/.cache/huggingface
+      TRANSFORMERS_CACHE: /app/.cache/huggingface
+      CMS_BASE_URL: ${CMS_BASE_URL:-}
+      CMS_ADMIN_EMAIL: ${CMS_ADMIN_EMAIL:-}
+      CMS_ADMIN_PASSWORD: ${CMS_ADMIN_PASSWORD:-}
+      SELENIUM_HEADLESS: ${SELENIUM_HEADLESS:-1}
+    volumes:
+      - ./data:/app/AI_Translation/App/backend/data
+      - ../../SeleniumProfile:/app/AI_Translation/SeleniumProfile
+      - hf-cache:/app/.cache/huggingface
+
+volumes:
+  hf-cache:
