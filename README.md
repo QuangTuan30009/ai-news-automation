@@ -1,10 +1,10 @@
-# 🚀 NewsFlow AI - Content Aggregation & Publishing Platform
+#  NewsFlow AI - Content Aggregation & Publishing Platform
 
 An end-to-end automated news aggregation, AI-powered translation, and CMS publishing system built with **FastAPI**, **VietAI Seq2Seq Transformers**, **Selenium RPA**, and **React 19**.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This platform streamlines and automates the editorial workflow for online publishing:
 1. **Scrapes** international articles across multiple top-tier tech and lifestyle news platforms.
@@ -15,7 +15,7 @@ This platform streamlines and automates the editorial workflow for online publis
 
 ---
 
-## 🏗️ Architecture & Pipeline
+##  Architecture & Pipeline
 
 ```mermaid
 flowchart LR
@@ -29,7 +29,7 @@ flowchart LR
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - **Multi-Source Scraping**: Handlers tailored for dynamic and static layouts:
   - TechCrunch (*Startup / Technology*)
@@ -49,7 +49,7 @@ flowchart LR
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Framework**: Python 3.10+, [FastAPI](https://fastapi.tiangolo.com/), Uvicorn, Pydantic
@@ -63,7 +63,7 @@ flowchart LR
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 App/
@@ -93,7 +93,7 @@ App/
 
 ---
 
-## ⚙️ Environment Configuration
+##  Environment Configuration
 
 ### Backend (`backend/.env`)
 
@@ -122,7 +122,7 @@ VITE_BASE_URL=http://localhost:8080
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### Option 1: Run with Docker Compose (Recommended)
 
@@ -178,7 +178,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to start usi
 
 ---
 
-## 📡 API Endpoints Summary
+##  API Endpoints Summary
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -192,7 +192,4 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to start usi
 
 ---
 
-## 🛡️ Security & Best Practices
 
-- **Credentials Management**: Sensitive information (CMS credentials) is decoupled from source code and managed via environment variables (`.env`).
-- **Data Protection**: Local credentials, token keys, and scraping cache profiles are excluded via `.gitignore`.
